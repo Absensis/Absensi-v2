@@ -21,9 +21,7 @@
     <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
         <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-black" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation">{{ config('app.name', 'Laravel') }}</a><button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
-                    <i class="text-white fas fa-bars"></i>
-                </button>
+                <p class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-black">{{ config('app.name', 'Laravel') }}</p>
             </div>
             <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
                 <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
@@ -75,9 +73,10 @@
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                                    <i class="fas fa-award"></i>
+                                    <i class="fas fa-file-pdf"></i>
                                 </div>
-                                <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                                <h6 class="text-xl font-semibold">
+                                    Can Print Pdf Files</h6>
                                 <p class="mt-2 mb-4 text-gray-600">
                                     Divide details about your product or agency work into parts.
                                     A paragraph describing a feature will be enough.
@@ -89,9 +88,10 @@
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                                    <i class="fas fa-retweet"></i>
+                                    <i class="fas fa-anchor"></i>
                                 </div>
-                                <h6 class="text-xl font-semibold">Free Revisions</h6>
+                                <h6 class="text-xl font-semibold">
+                                    Integrated With Voyager</h6>
                                 <p class="mt-2 mb-4 text-gray-600">
                                     Keep you user engaged by providing meaningful information.
                                     Remember that by this time, the user is curious.
@@ -103,9 +103,10 @@
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                                    <i class="fas fa-fingerprint"></i>
+                                    <i class="fas fa-laravel"></i>
                                 </div>
-                                <h6 class="text-xl font-semibold">Verified Company</h6>
+                                <h6 class="text-xl font-semibold">
+                                    With Laravel 8 Technology</h6>
                                 <p class="mt-2 mb-4 text-gray-600">
                                     Write a few lines about each one. A paragraph describing a
                                     feature will be enough. Keep you user engaged!
@@ -220,7 +221,8 @@
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap justify-center text-center mb-24">
                     <div class="w-full lg:w-6/12 px-4">
-                        <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+                        <h2 class="text-4xl font-semibold">
+                            Behind This Project</h2>
                         <p class="text-lg leading-relaxed m-4 text-gray-600">
                             According to the National Oceanic and Atmospheric
                             Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -229,11 +231,11 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap">
-                    <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
                         <div class="px-6">
-                            <img alt="..." src="./assets/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                            <img alt="..." src="https://images.unsplash.com/photo-1552158732-06dc1d835de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
                             <div class="pt-6 text-center">
-                                <h5 class="text-xl font-bold">Ryan Tompson</h5>
+                                <h5 class="text-xl font-bold">Muhammad Farras Jibran</h5>
                                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                                     Web Developer
                                 </p>
@@ -247,11 +249,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
                         <div class="px-6">
-                            <img alt="..." src="./assets/img/team-2-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                            <img alt="..." src="https://images.unsplash.com/photo-1552158732-06dc1d835de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
                             <div class="pt-6 text-center">
-                                <h5 class="text-xl font-bold">Romina Hadid</h5>
+                                <h5 class="text-xl font-bold">Akmal Permata Sukma</h5>
                                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                                     Marketing Specialist
                                 </p>
@@ -264,11 +266,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
                         <div class="px-6">
-                            <img alt="..." src="./assets/img/team-3-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                            <img alt="..." src="https://images.unsplash.com/photo-1552158732-06dc1d835de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
                             <div class="pt-6 text-center">
-                                <h5 class="text-xl font-bold">Alexa Smith</h5>
+                                <h5 class="text-xl font-bold">Jerry Yusuf Simbolon</h5>
                                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                                     UI/UX Designer
                                 </p>
@@ -282,11 +284,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="w-full md:w-6/12 lg:w-5/12 lg:mb-0 mb-12 px-4 mt-12" style="margin-left: 70px;">
                         <div class="px-6">
-                            <img alt="..." src="./assets/img/team-4-470x470.png" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                            <img alt="..." src="https://images.unsplash.com/photo-1552158732-06dc1d835de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
                             <div class="pt-6 text-center">
-                                <h5 class="text-xl font-bold">Jenna Kardi</h5>
+                                <h5 class="text-xl font-bold">Fauzan Adli Firdaus</h5>
+                                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                    UI/UX Designer
+                                </p>
+                                <div class="mt-6">
+                                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-instagram"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 mt-12">
+                        <div class="px-6">
+                            <img alt="..." src="https://images.unsplash.com/photo-1552158732-06dc1d835de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                            <div class="pt-6 text-center">
+                                <h5 class="text-xl font-bold">Syahdah Hamidah</h5>
                                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                                     Founder and CEO
                                 </p>
