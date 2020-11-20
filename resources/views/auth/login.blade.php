@@ -27,7 +27,7 @@
         <div class="w-full md:w-1/2 flex flex-col">
 
             <div class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-                <a href="#" class="bg-black text-white font-bold text-xl p-4">Logo</a>
+                <a href="{{ route('home')}}"><img src="{{ asset('image/logo1.svg')}}" alt="..." width="6%"></a>
             </div>
 
             <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
@@ -48,7 +48,7 @@
 
                     <x-jet-validation-errors class="mt-5" />
 
-                    <input type="submit" value="Log In" class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
+                    <input type="submit" style="border-radius: 20px; background-color: #2ec1ac;" value="Log In" class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
                 </form>
                 <div class="text-center pt-12 pb-12">
                     <p>Don't have an account? <a href="{{ route('register') }}" class="underline font-semibold">Register here.</a></p>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Image Section -->
-        <div class="w-1/2 shadow-2xl">
+        <div class="w-1/2">
             <img class="object-cover w-full h-screen hidden md:block" src="{{ asset('image/background.png')}}">
         </div>
     </div>
