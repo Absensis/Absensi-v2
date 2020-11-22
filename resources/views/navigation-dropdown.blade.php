@@ -57,6 +57,12 @@
                     </x-jet-nav-link>
                 </div>
 
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="mapel" :active="request()->routeIs('mapel')">
+                        Mata Pelajaran
+                    </x-jet-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -69,7 +75,10 @@
                         </button>
                         @else
                         <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                            <div><b>{{ Auth::user()->name }}</b></div>
+                            <div>
+                                <i class="fas fa-user" style="margin-right: 5px;"></i>
+                                <b>{{ Auth::user()->name }}</b>
+                            </div>
 
                             <div class="ml-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
