@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class KelasRuang extends Model
 {
     use HasFactory;
+
+    public function Absen()
+    {
+        return $this->belongsTo('App\Models\Absen');
+    }
 }
