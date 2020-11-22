@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Absens;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,10 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::get('absen', Absens::class)->name('absen');
+});
