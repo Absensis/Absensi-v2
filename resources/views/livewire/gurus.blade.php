@@ -45,7 +45,7 @@
                         <th class="px-4 py-2 w-30">Tempat Lahir</th>
                         <th class="px-4 py-2 w-30">Tanggal Lahir</th>
                         <th class="px-4 py-2 w-20">Agama</th>
-                        <th class="px-4 py-2 w-10">Jenis Kelamin</th>
+                        <th class="px-4 py-2">Jenis Kelamin</th>
                         <th class="px-4 py-2">Foto Guru</th>
                     </tr>
                 </thead>
