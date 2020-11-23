@@ -3,6 +3,7 @@
 use App\Http\Livewire\Absens;
 use App\Http\Livewire\Mapels;
 use App\Models\Absen;
+use App\Models\Guru;
 use App\Models\Mapel;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -33,11 +34,15 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         $absen = Absen::where('tanggal', Carbon::today())->get();
         $absencount = $absen->count();
 
+        // Guru
+        $guru = Guru::get();
+        $gurucount = $guru->count();
+
         // Mapel
         $mapel = Mapel::get();
         $mapelcount = $mapel->count();
 
-        return view('dashboard', ['absencount' => $absencount, 'mapelcount' => $mapelcount]);
+        return view('dashboard', ['absencount' => $absencount, 'mapelcount' => $mapelcount, 'gurucount' => $gurucount]);
     })->name('dashboard');
 
     Route::get('absen', Absens::class)->name('absen');

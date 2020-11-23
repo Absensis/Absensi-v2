@@ -25,9 +25,9 @@
                         <div class="bg-white rounded-full shadow" style="width: 60px; height: 60px; margin-left: 40%; background-color: green;">
                             <i class="fas fa-user-tie fa-2x" style="margin-top: 15px; margin-left: 17px; color: white;"></i>
                         </div>
-                        <h1 style="font-size: 20px; margin-left: 32%; margin-top: 7%;">Data<b style="color: green;"> Guru</b></h1>
+                        <h1 style="font-size: 20px; margin-left: 35%; margin-top: 7%;">Data<b style="color: green;"> Guru</b></h1>
                         <a href="{{ route('absen')}}">
-                            <h2 style="font-size: 60px; margin-left:43%; margin-top: 5%;"><b>5</b></h2>
+                            <h2 style="font-size: 60px; margin-left:40%; margin-top: 5%;"><b>{{ $gurucount}}</b></h2>
                         </a>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         <div class="bg-white rounded-full shadow" style="width: 60px; height: 60px; margin-left: 40%; background-color: magenta;">
                             <i class="fas fa-book fa-2x" style="margin-top: 15px; margin-left: 17px; color: white;"></i>
                         </div>
-                        <h1 style="font-size: 20px; margin-left: 32%; margin-top: 7%;">Data<b style="color: magenta;"> Mapel</b></h1>
+                        <h1 style="font-size: 20px; margin-left: 35%; margin-top: 7%;">Data<b style="color: magenta;"> Mapel</b></h1>
                         <a href="{{ route('mapel')}}">
                             <h2 style="font-size: 60px; margin-left:40%; margin-top: 5%;"><b>{{ $mapelcount }}</b></h2>
                         </a>
