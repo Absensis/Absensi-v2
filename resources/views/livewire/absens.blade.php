@@ -82,13 +82,13 @@
                 <thead>
                     <tr class="text-white" style="background-color: #6875F5;">
                         @if(auth()->user()->role_id == 2)
-                        <th class="px-4 py-2" style="width: 14%;">Tanggal</th>
-                        <th class="px-4 py-2" style="width: 10%;">Jam Pelajaran</th>
-                        <th class="px-4 py-2 w-30">Kelas</th>
-                        <th class="px-4 py-2 w-30">Guru Pengajar</th>
-                        <th class="px-4 py-2" style="width: 20%;">Mata Pelajaran</th>
-                        <th class="px-4 py-2" style="width: 20%;">Link Pembelajaran</th>
-                        <th class="px-4 py-2">Dokumentasi</th>
+                        <th class="px-4 py-2" style="width: 9%;">Tanggal</th>
+                        <th class="px-4 py-2" style="width: 7%;">Jam Pelajaran</th>
+                        <th class="px-4 py-2" style="width: 7%;">Kelas</th>
+                        <th class="px-4 py-2" style="width: 13%;">Guru Pengajar</th>
+                        <th class="px-4 py-2" style="width: 15%;">Mata Pelajaran</th>
+                        <th class="px-4 py-2" style="width: 10%;">Link Pembelajaran</th>
+                        <th class="px-4 py-2" style="width: 14%;">Dokumentasi</th>
                         <th class="px-4 py-2">Kategori</th>
                         @else
                         <th class="px-4 py-2" style="width: 9%;">Tanggal</th>
@@ -98,7 +98,7 @@
                         <th class="px-4 py-2" style="width: 15%;">Mata Pelajaran</th>
                         <th class="px-4 py-2" style="width: 10%;">Link Pembelajaran</th>
                         <th class="px-4 py-2" style="width: 14%;">Dokumentasi</th>
-                        <th class="px-4 py-2">Kategori</th>
+                        <th class="px-4 py-2" style="width: 12%;">Kategori</th>
                         <th class="px-4 py-2">Action</th>
                         @endif
                     </tr>
@@ -125,7 +125,7 @@
                             @endforeach
                         </td>
                         <td class="border px-4 py-2">{{ $row->link_pembelajaran }}</td>
-                        <td class="border px-4 py-2"><img src="storage\{{ $row->dokumentasi }}" alt="..."></td>
+                        <td class="border px-4 py-2"><img src="{{ asset('storage/absens/November2020/') . '/' .$row->dokumentasi}}" alt="..."></td>
                         <td class="border px-4 py-2">{{ $row->keterangan }}</td>
                         @else
                         <td class="border px-4 py-2">{{ $row->tanggal }}</td>
@@ -149,8 +149,14 @@
                         <td class="border px-4 py-2"><img src="{{ asset('storage/absens/November2020/') . '/' .$row->dokumentasi}}" alt=" ..."></td>
                         <td class="border px-4 py-2">{{ $row->keterangan }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $row->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                            <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                            <button wire:click="edit({{ $row->id }})" style="width: 100px;" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2">
+                                <i class="fas fa-edit" style="color: white;"></i>
+                                Edit
+                            </button>
+                            <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                                <i class="fas fa-trash" style="color: white;"></i>
+                                Delete
+                            </button>
                         </td>
                         @endif
                     </tr>

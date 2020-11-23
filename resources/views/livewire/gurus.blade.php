@@ -5,7 +5,7 @@
     </h2>
 </x-slot>
 <div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
 
             <!-- dropdown -->
@@ -37,15 +37,15 @@
             </x-jet-dropdown>
 
             <!-- table -->
-            <table class="table-fixed w-full text-center">
+            <table class="table-responsive w-full text-center">
                 <thead>
                     <tr class="text-white" style="background-color: #6875F5;">
                         <th class="px-4 py-2" style="width: 15%;">Nik</th>
-                        <th class="px-4 py-2" style="width: 10%;">Nama Guru</th>
-                        <th class="px-4 py-2 w-30">Tempat Lahir</th>
-                        <th class="px-4 py-2 w-30">Tanggal Lahir</th>
+                        <th class="px-4 py-2" style="width: 15%;">Nama Guru</th>
+                        <th class="px-4 py-2" style="width: 12%;">Tempat Lahir</th>
+                        <th class="px-4 py-2" style="width: 10%;">Tanggal Lahir</th>
                         <th class="px-4 py-2 w-20">Agama</th>
-                        <th class="px-4 py-2">Jenis Kelamin</th>
+                        <th class="px-4 py-2" style="width: 10%;">Jenis Kelamin</th>
                         <th class="px-4 py-2">Foto Guru</th>
                     </tr>
                 </thead>
