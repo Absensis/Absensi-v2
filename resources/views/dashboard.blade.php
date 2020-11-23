@@ -26,7 +26,7 @@
                             <i class="fas fa-user-tie fa-2x" style="margin-top: 15px; margin-left: 17px; color: white;"></i>
                         </div>
                         <h1 style="font-size: 20px; margin-left: 35%; margin-top: 7%;">Data<b style="color: green;"> Guru</b></h1>
-                        <a href="{{ route('absen')}}">
+                        <a href="{{ route('guru')}}">
                             <h2 style="font-size: 60px; margin-left:40%; margin-top: 5%;"><b>{{ $gurucount}}</b></h2>
                         </a>
                     </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Absens;
+use App\Http\Livewire\Gurus;
 use App\Http\Livewire\Mapels;
 use App\Models\Absen;
 use App\Models\Guru;
@@ -47,4 +48,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::get('absen', Absens::class)->name('absen');
     Route::get('mapel', Mapels::class)->name('mapel');
+    Route::get('guru', Gurus::class)->name('guru');
 });

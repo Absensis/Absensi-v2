@@ -38,7 +38,7 @@
                                 Select Action
                             </div>
 
-                            <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                            <x-jet-dropdown-link href="{{ route('guru') }}">
                                 Table View Data Guru
                             </x-jet-dropdown-link>
 
