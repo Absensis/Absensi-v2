@@ -9,7 +9,7 @@ use App\Models\KelasRuang;
 use App\Models\Mapel;
 use Carbon\Carbon;
 use Livewire\WithFileUploads;
-use Illuminate\Support\Str;
+use PDF;
 
 class Absens extends Component
 {
