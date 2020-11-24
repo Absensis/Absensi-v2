@@ -36,7 +36,7 @@
                         Select Action
                     </div>
 
-                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                    <x-jet-dropdown-link href="{{ route('pdfprint')}}">
                         <i class="fas fa-file-pdf" style="margin-right: 5px; color: blue;"></i>
                         Print PDF
                     </x-jet-dropdown-link>
