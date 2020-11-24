@@ -198,9 +198,7 @@
                         <h2 class="text-4xl font-semibold">
                             Behind This Project</h2>
                         <p class="text-lg leading-relaxed m-4 text-gray-600">
-                            According to the National Oceanic and Atmospheric
-                            Administration, Ted, Scambos, NSIDClead scentist, puts the
-                            potentially record maximum.
+                            And below are the names of the people behind this absensis website. give them appreciate by following sosmed and github accounts. That is all and thank you.
                         </p>
                     </div>
                 </div>
@@ -214,11 +212,12 @@
                                     Web Developer
                                 </p>
                                 <div class="mt-6">
-                                    <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-twitter"></i></button><button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-facebook-f"></i></button><button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-dribbble"></i>
-                                    </button>
+                                    <a href="https://www.instagram.com/farasjbrn/" class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 pt-15" type="button">
+                                        <i class="fab fa-instagram mt-2"></i>
+                                    </a>
+                                    <a href="https://github.com/farasjibran" class="bg-white shadow w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-github mt-2"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -232,10 +231,12 @@
                                     Web Developer
                                 </p>
                                 <div class="mt-6">
-                                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-google"></i></button><button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </button>
+                                    <a href="https://www.instagram.com/akmalsukma_/" class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-instagram mt-2"></i>
+                                    </a>
+                                    <a href="https://github.com/akmalsukma" class="bg-white shadow w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-github mt-2"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -249,11 +250,12 @@
                                     Resource Team
                                 </p>
                                 <div class="mt-6">
-                                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-instagram"></i>
-                                    </button>
+                                    <a href="https://www.instagram.com/imjereh/" class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-instagram mt-2"></i>
+                                    </a>
+                                    <a href="https://github.com/Jerryy25" class="bg-white shadow w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-github mt-2"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -267,11 +269,12 @@
                                     UI/UX Designer
                                 </p>
                                 <div class="mt-6">
-                                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-instagram"></i>
-                                    </button>
+                                    <a href="https://www.instagram.com/oje.28/" class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-instagram mt-2"></i>
+                                    </a>
+                                    <a href="https://github.com/fauzanadlif" class="bg-white shadow w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-github mt-2"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -285,12 +288,12 @@
                                     Resource Team
                                 </p>
                                 <div class="mt-6">
-                                    <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-dribbble"></i></button><button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                                        <i class="fab fa-instagram"></i>
-                                    </button>
+                                    <a href="https://www.instagram.com/sy.hmdhh/" class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                        <i class="fab fa-instagram mt-2"></i>
+                                    </a>
+                                    <a href="https://github.com/SyahdaHamidah" class="bg-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 shadow" type="button">
+                                        <i class="fab fa-github mt-2"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
