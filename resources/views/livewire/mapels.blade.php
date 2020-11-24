@@ -8,6 +8,10 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
 
+            <p style="position: absolute;">
+                <b>List of mapel</b>
+            </p>
+
             <!-- dropdown -->
             <x-jet-dropdown align="right" width="48" style="margin-bottom: -20px;">
                 <x-slot name="trigger">
@@ -45,10 +49,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i = 1 ?>
                     @foreach($mapel as $row)
                     <tr>
-                        <td class="border px-4 py-2">{{$i++ }}</td>
+                        <td class="border px-4 py-2">{{$row->id }}</td>
                         <td class="border px-4 py-2">{{ $row->mata_pelajaran }}</td>
                     </tr>
                     @endforeach
