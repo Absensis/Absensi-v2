@@ -54,12 +54,12 @@
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                                    <i class="fas fa-file-pdf"></i>
+                                    <i class="fas fa-download"></i>
                                 </div>
                                 <h6 class="text-xl font-semibold">
-                                    Can Print Pdf Files</h6>
+                                    Can Print Pdf & Excel</h6>
                                 <p class="mt-2 mb-4 text-gray-600">
-                                    dompdf is (mostly) a CSS 2.1 compliant HTML layout and rendering engine written in PHP. It is a style-driven renderer.
+                                    This website can print absences or other data into PDF or Excel. by using dompdf and PHPexcel. try it yourself and feel the ease.
                                 </p>
                             </div>
                         </div>
