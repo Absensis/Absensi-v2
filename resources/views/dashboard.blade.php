@@ -6,6 +6,12 @@
         </h2>
     </x-slot>
 
+    <div class="floatbtn" style="position: absolute; margin-top: 31%; margin-left: 2%;">
+        <a href="{{ route('home')}}" type="button" style="background-color: #6875F5;" class="p-0 w-12 h-12 rounded-full active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+            <i class="fas fa-long-arrow-alt-left fa-lg" style="color: white; margin-top: 17px; margin-left: 13px;"></i>
+        </a>
+    </div>
+
     <div class="py-12 mt-10">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
