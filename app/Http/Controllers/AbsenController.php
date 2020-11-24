@@ -28,6 +28,6 @@ class AbsenController extends Controller
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream();
+        $dompdf->stream('Absen_' . Date('Y-m-d') . '_.pdf');
     }
 }

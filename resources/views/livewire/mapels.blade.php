@@ -46,18 +46,17 @@
                 </thead>
                 <tbody>
                     <?php $i = 1 ?>
-                    @forelse($mapel as $row)
+                    @foreach($mapel as $row)
                     <tr>
                         <td class="border px-4 py-2">{{$i++ }}</td>
                         <td class="border px-4 py-2">{{ $row->mata_pelajaran }}</td>
                     </tr>
-                    @empty
-                    <tr>
-                        <td class="border px-4 py-2 text-center" colspan="8">Tidak ada data</td>
-                    </tr>
-                    @endforelse
+                    @endforeach
                 </tbody>
             </table>
+            <div style="margin-top: 20px;">
+                {{ $mapel->links() }}
+            </div>
         </div>
     </div>
 </div>

@@ -18,7 +18,7 @@
             </div>
             @endif
 
-            <p style="position: absolute;"><b>Today Absen Date</b> : {{date('Y-m-d')}}</p>
+            <p style="position: absolute;"><b>Today absen date</b> : {{date('Y-m-d')}}</p>
 
             <!-- dropdown -->
             <x-jet-dropdown align="right" width="48" style="margin-bottom: -20px;">
@@ -104,7 +104,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse($absen as $row)
+                    @foreach($absen as $row)
                     <tr>
                         @if(auth()->user()->role_id == 2)
                         <td class="border px-4 py-2">{{ $row->tanggal }}</td>
@@ -160,17 +160,7 @@
                         </td>
                         @endif
                     </tr>
-                    @empty
-                    @if(auth()->user()->role_id == 2)
-                    <tr>
-                        <td class="border px-4 py-2 text-center" colspan="8">Tidak ada data</td>
-                    </tr>
-                    @else
-                    <tr>
-                        <td class="border px-4 py-2 text-center" colspan="9">Tidak ada data</td>
-                    </tr>
-                    @endif
-                    @endforelse
+                    @endforeach
                 </tbody>
             </table>
         </div>

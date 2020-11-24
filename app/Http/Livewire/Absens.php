@@ -14,21 +14,25 @@ use PDF;
 class Absens extends Component
 {
     use WithFileUploads;
-    public $absen, $tanggal, $jam_pelajaran, $kelas, $guru_pengajar, $mata_pelajaran, $link_pembelajaran, $dokumentasi, $keterangan, $absen_id;
+    public $tanggal, $jam_pelajaran, $kelas, $guru_pengajar, $mata_pelajaran, $link_pembelajaran, $dokumentasi, $keterangan, $absen_id;
     public $isOpen = 0;
 
 
     // render view liveware
     public function render()
     {
-        $this->absen = Absen::where('tanggal', Carbon::today())->get();
-
         // get all data
         $mapel = Mapel::get();
         $guru = Guru::get();
         $kelas = KelasRuang::get();
+        $absen = Absen::where('tanggal', Carbon::today())->paginate(10);
 
-        return view('livewire.absens', ['mapel' => $mapel, 'guru' => $guru, 'ruangkelas' => $kelas]);
+        return view('livewire.absens', [
+            'mapel' => $mapel,
+            'guru' => $guru,
+            'ruangkelas' => $kelas,
+            'absen' => $absen,
+        ]);
     }
 
     // reset input fields

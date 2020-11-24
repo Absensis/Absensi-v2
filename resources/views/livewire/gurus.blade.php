@@ -8,6 +8,10 @@
     <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
 
+            <p style="position: absolute;">
+                <b>List of teachers</b>
+            </p>
+
             <!-- dropdown -->
             <x-jet-dropdown align="right" width="48" style="margin-bottom: -20px;">
                 <x-slot name="trigger">
@@ -49,23 +53,6 @@
                         <th class="px-4 py-2">Foto Guru</th>
                     </tr>
                 </thead>
-                <!-- <tbody>
-                    @forelse($guru as $row)
-                    <tr>
-                        <td class="border px-4 py-2">{{ $row->nik }}</td>
-                        <td class="border px-4 py-2">{{ $row->nama_guru }}</td>
-                        <td class="border px-4 py-2">{{ $row->tempat_lahir }}</td>
-                        <td class="border px-4 py-2">{{ $row->tanggal_lahir }}</td>
-                        <td class="border px-4 py-2">{{ $row->agama }}</td>
-                        <td class="border px-4 py-2">{{ $row->jenis_kelamin }}</td>
-                        <td class="border px-4 py-2"><img src="storage\{{ $row->foto_guru }}" alt="..."></td>
-                    </tr>
-                    @empty
-                    <tr>
-                        <td class="border px-4 py-2 text-center" colspan="8">Tidak ada data</td>
-                    </tr>
-                    @endforelse
-                </tbody> -->
                 <tbody>
                     @foreach($guru as $row)
                     <tr>
@@ -75,7 +62,7 @@
                         <td class="border px-4 py-2">{{ $row->tanggal_lahir }}</td>
                         <td class="border px-4 py-2">{{ $row->agama }}</td>
                         <td class="border px-4 py-2">{{ $row->jenis_kelamin }}</td>
-                        <td class="border px-4 py-2"><img src="storage\{{ $row->foto_guru }}" alt="..."></td>
+                        <td class="border px-4 py-2" style="width: 15%;"><img src="storage\{{ $row->foto_guru }}" alt="..."></td>
                     </tr>
                     @endforeach
                 </tbody>

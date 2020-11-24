@@ -3,15 +3,17 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Mapel;
 
 class Mapels extends Component
 {
-    public $mapel;
+    use WithPagination;
 
     public function render()
     {
-        $this->mapel = Mapel::get();
-        return view('livewire.mapels');
+        return view('livewire.mapels', [
+            'mapel' => Mapel::paginate(10)
+        ]);
     }
 }
