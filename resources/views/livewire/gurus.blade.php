@@ -49,7 +49,7 @@
                         <th class="px-4 py-2">Foto Guru</th>
                     </tr>
                 </thead>
-                <tbody>
+                <!-- <tbody>
                     @forelse($guru as $row)
                     <tr>
                         <td class="border px-4 py-2">{{ $row->nik }}</td>
@@ -65,8 +65,24 @@
                         <td class="border px-4 py-2 text-center" colspan="8">Tidak ada data</td>
                     </tr>
                     @endforelse
+                </tbody> -->
+                <tbody>
+                    @foreach($guru as $row)
+                    <tr>
+                        <td class="border px-4 py-2">{{ $row->nik }}</td>
+                        <td class="border px-4 py-2">{{ $row->nama_guru }}</td>
+                        <td class="border px-4 py-2">{{ $row->tempat_lahir }}</td>
+                        <td class="border px-4 py-2">{{ $row->tanggal_lahir }}</td>
+                        <td class="border px-4 py-2">{{ $row->agama }}</td>
+                        <td class="border px-4 py-2">{{ $row->jenis_kelamin }}</td>
+                        <td class="border px-4 py-2"><img src="storage\{{ $row->foto_guru }}" alt="..."></td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
+            <div style="margin-top: 20px;">
+                {{ $guru->links() }}
+            </div>
         </div>
     </div>
 </div>

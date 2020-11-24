@@ -3,17 +3,17 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Guru;
 
 class Gurus extends Component
 {
-    public $guru;
+    use WithPagination;
 
     public function render()
     {
-        $this->guru = Guru::get();
-        return view('livewire.gurus');
+        return view('livewire.gurus', [
+            'guru' => Guru::paginate(10)
+        ]);
     }
-
-    
 }
