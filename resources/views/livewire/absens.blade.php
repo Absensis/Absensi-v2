@@ -41,7 +41,7 @@
                         Print PDF
                     </x-jet-dropdown-link>
 
-                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                    <x-jet-dropdown-link href="{{ route('excelprint') }}">
                         <i class="fas fa-file-excel" style="margin-right: 5px; color: green;"></i>
                         Print Excel
                     </x-jet-dropdown-link>
@@ -64,7 +64,7 @@
                         Print PDF
                     </x-jet-dropdown-link>
 
-                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                    <x-jet-dropdown-link href="{{ route('excelprint') }}">
                         <i class="fas fa-file-excel" style="margin-right: 5px; color: green;"></i>
                         Print Excel
                     </x-jet-dropdown-link>
@@ -89,7 +89,7 @@
                         <th class="px-4 py-2" style="width: 15%;">Mata Pelajaran</th>
                         <th class="px-4 py-2" style="width: 10%;">Link Pembelajaran</th>
                         <th class="px-4 py-2" style="width: 14%;">Dokumentasi</th>
-                        <th class="px-4 py-2">Kategori</th>
+                        <th class="px-4 py-2">Keterangan</th>
                         @else
                         <th class="px-4 py-2" style="width: 9%;">Tanggal</th>
                         <th class="px-4 py-2" style="width: 7%;">Jam Pelajaran</th>
@@ -98,7 +98,7 @@
                         <th class="px-4 py-2" style="width: 15%;">Mata Pelajaran</th>
                         <th class="px-4 py-2" style="width: 10%;">Link Pembelajaran</th>
                         <th class="px-4 py-2" style="width: 14%;">Dokumentasi</th>
-                        <th class="px-4 py-2" style="width: 12%;">Kategori</th>
+                        <th class="px-4 py-2" style="width: 12%;">Keterangan</th>
                         <th class="px-4 py-2">Action</th>
                         @endif
                     </tr>

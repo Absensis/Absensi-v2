@@ -124,7 +124,9 @@ class Absens extends Component
     // function untuk delete data
     public function delete($id)
     {
-        Absen::find($id)->delete();
+        $absen = Absen::find($id);
+        unlink(public_path() . '/storage/absens/November2020/' . $absen->dokumentasi);
+        $absen->delete();
         session()->flash('message', 'Absen Deleted Successfully.');
     }
 }

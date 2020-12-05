@@ -47,8 +47,9 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('dashboard', ['absencount' => $absencount, 'mapelcount' => $mapelcount, 'gurucount' => $gurucount]);
     })->name('dashboard');
 
-    Route::get('absen', Absens::class)->name('absen');  
+    Route::get('absen', Absens::class)->name('absen');
     Route::get('mapel', Mapels::class)->name('mapel');
     Route::get('guru', Gurus::class)->name('guru');
     Route::get('pdfprint', [AbsenController::class, 'pdfToday'])->name('pdfprint');
+    Route::get('excelprint', [AbsenController::class, 'excelExport'])->name('excelprint');
 });

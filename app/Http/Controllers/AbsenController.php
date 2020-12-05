@@ -6,6 +6,8 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 use App\Models\Absen;
 use Carbon\Carbon;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\AbsenExport;
 
 class AbsenController extends Controller
 {
@@ -29,5 +31,10 @@ class AbsenController extends Controller
 
         // Output the generated PDF to Browser
         $dompdf->stream('Absen_' . Date('Y-m-d') . '_.pdf');
+    }
+
+    function excelExport()
+    {
+        return Excel::download(new AbsenExport, 'absen_' . Date('Y-m-d') . '.xlsx');
     }
 }

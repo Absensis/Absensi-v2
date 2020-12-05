@@ -13,7 +13,7 @@ class Absen extends Model
     use HasFactory;
 
     protected $fillable = [
-      'tanggal', 'jam_pelajaran', 'kelas', 'guru_pengajar', 'mata_pelajaran', 'link_pembelajaran', 'dokumentasi', 'keterangan'
+      'tanggal', 'jam_pelajaran', 'kelas', 'guru_pengajar', 'mata_pelajaran', 'link_pembelajaran', 'dokumentasi', 'keterangan'  
     ];
 
     public function KelasRuang()
